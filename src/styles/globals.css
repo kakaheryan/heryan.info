@@ -95,7 +95,7 @@
 }
 
 [fade-bottom] {
-  @apply transition duration-[400ms] ease-out translate-y-24 opacity-0 motion-reduce:translate-y-0 motion-reduce:opacity-100;
+  @apply transition duration-[400ms] ease-out translate-y-20 opacity-0 motion-reduce:translate-y-0 motion-reduce:opacity-100;
 }
 .fade-in-start [fade-bottom] {
   @apply translate-y-0 opacity-100;
