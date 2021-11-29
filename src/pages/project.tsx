@@ -26,15 +26,14 @@ export default function ProjectPage({
             </h3>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
               {repos.map((repo, index) => (
-                <li
-                  key={repo.i}
-                  className={clsx(
-                    "w-full bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden",
-                    "md:max-w-2xl"
-                  )}
-                  fade-side={1 + index}
-                >
-                  <div className="md:flex">
+                <li key={repo.i} className="md:max-w-2xl overflow-hidden">
+                  <div
+                    className={clsx(
+                      "w-full h-full bg-white dark:bg-gray-700 rounded-xl shadow-md",
+                      "md:flex"
+                    )}
+                    fade-side={1 + index}
+                  >
                     <div className="p-3">
                       <a
                         href={repo.html_url}
