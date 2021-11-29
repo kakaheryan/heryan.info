@@ -2,19 +2,10 @@ import clsx from "clsx";
 import { InferGetStaticPropsType } from "next";
 import * as React from "react";
 
-import HeadMeta from "@/components/HeadMeta";
-import Layout from "@/components/main/Layout";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import useLoaded from "@/hooks/useLoaded";
 
-=======
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
+import HeadMeta from "@/components/HeadMeta";
+import Layout from "@/components/main/Layout";
 
 export default function ProjectPage({
   repos,
@@ -27,60 +18,22 @@ export default function ProjectPage({
           <section
             className={clsx(
               "flex flex-col mb-10 mt-4 min-h-main layout",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
               useLoaded() && "fade-in-start"
-=======
-              "fade-in-start"
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
-              "fade-in-start"
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
-              "fade-in-start"
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
             )}
           >
             <h3 className="flex-none py-2 text-sm font-semibold border-b-2 border-gray-300 dark:border-green-300">
               My Projects
             </h3>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
               {repos.map((repo, index) => (
-
-=======
-              {repos.map((repo) => (
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
-              {repos.map((repo) => (
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
-              {repos.map((repo) => (
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
                 <li
                   key={repo.i}
                   className={clsx(
                     "w-full bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden",
                     "md:max-w-2xl"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  )} fade-side={1 + index}>
-=======
                   )}
+                  fade-side={1 + index}
                 >
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
-                  )}
-                >
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
-=======
-                  )}
-                >
->>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
                   <div className="md:flex">
                     <div className="p-3">
                       <a
