@@ -38,14 +38,6 @@
     font-style: normal;
   }
 
-  @font-face {
-    font-family: "Fira";
-    src: url("/fonts/fira/woff2/FiraCode-VF.woff2") format("woff2-variations");
-    /* font-weight requires a range: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#Using_a_variable_font_font-face_changes */
-    font-weight: 300 700;
-    font-style: normal;
-  }
-
   h1 {
     @apply text-2xl font-bold leading-7  md:text-4xl font-primary md:leading-9;
   }
@@ -125,7 +117,7 @@
 }
 
 [fade-side] {
-  @apply transition duration-[400ms] ease-out translate-x-24 opacity-0 motion-reduce:translate-x-0 motion-reduce:opacity-100;
+  @apply transition duration-[400ms] ease-out translate-x-14 opacity-0 motion-reduce:translate-x-0 motion-reduce:opacity-100;
 }
 .fade-in-start [fade-side] {
   @apply translate-x-0 opacity-100;
