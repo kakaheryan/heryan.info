@@ -6,8 +6,11 @@ import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import useLoaded from "@/hooks/useLoaded";
 
+=======
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
 >>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
@@ -26,7 +29,11 @@ export default function ProjectPage({
               "flex flex-col mb-10 mt-4 min-h-main layout",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               useLoaded() && "fade-in-start"
+=======
+              "fade-in-start"
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
               "fade-in-start"
 >>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
@@ -41,8 +48,12 @@ export default function ProjectPage({
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               {repos.map((repo, index) => (
 
+=======
+              {repos.map((repo) => (
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
               {repos.map((repo) => (
 >>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
@@ -56,7 +67,12 @@ export default function ProjectPage({
                     "md:max-w-2xl"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                   )} fade-side={1 + index}>
+=======
+                  )}
+                >
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
                   )}
                 >
