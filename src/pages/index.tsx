@@ -47,7 +47,7 @@ export default function IndexPage() {
                       className="font-light mb-10 md:text-medium text-gray-500 dark:text-gray-300"
                       fade-side="4"
                     >
-                      Hello! You can call me{" "}
+                      You can call me{" "}
                       <TextGradient className="font-semibold italic">
                         Heryan
                       </TextGradient>
