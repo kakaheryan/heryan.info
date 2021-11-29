@@ -65,7 +65,11 @@ export default function IndexPage() {
                         fade-bottom="3"
                       >
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Explore AboutMe
+=======
+                        Explore My Profile
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
                         Explore My Profile
 >>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8

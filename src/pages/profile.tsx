@@ -111,7 +111,11 @@ export default function ProfilePage() {
               "flex flex-col rounded-md bg-white dark:bg-gray-800",
               " my-4 p-4 shadow-xl overflow-hidden",
 <<<<<<< HEAD
+<<<<<<< HEAD
               useLoaded() && "fade-in-start"
+=======
+              "fade-in-start"
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 =======
               "fade-in-start"
 >>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
