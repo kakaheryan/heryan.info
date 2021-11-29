@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import * as React from "react";
 
-import Useloaded from "@/hooks/Useloaded";
+import useLoaded from "@/hooks/useLoaded";
 
 import TextGradient from "@/components/attr/TextGradient";
 // import { InView } from 'react-intersection-observer';
@@ -19,7 +19,7 @@ export default function IndexPage() {
           <section
             className={clsx(
               "flex flex-col justify-center mb-10 min-h-main layout",
-              Useloaded() && "fade-in-start"
+              useLoaded() && "fade-in-start"
             )}
           >
             <article className="mb-4">

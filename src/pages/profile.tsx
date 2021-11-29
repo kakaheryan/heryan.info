@@ -9,7 +9,7 @@ import {
   SiWhatsapp,
 } from "react-icons/si";
 
-import Useloaded from "@/hooks/Useloaded";
+import useLoaded from "@/hooks/useLoaded";
 
 import TextGradient from "@/components/attr/TextGradient";
 import HeadMeta from "@/components/HeadMeta";
@@ -30,7 +30,7 @@ export default function ProfilePage() {
               "row-span-2 col-span-1",
               "flex flex-col justify-center my-4 p-2 rounded-md",
               "bg-white dark:bg-gray-800 overflow-hidden",
-              Useloaded() && "fade-in-start"
+              useLoaded() && "fade-in-start"
             )}
           >
             <div
