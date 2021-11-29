@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Fira";
+    src: url("/fonts/fira/woff2/FiraCode-Light.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Fira";
+    src: url("/fonts/fira/woff2/FiraCode-VF.woff2") format("woff2-variations");
+    /* font-weight requires a range: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#Using_a_variable_font_font-face_changes */
+    font-weight: 300 700;
+    font-style: normal;
+  }
+
+  h1 {
+    @apply text-2xl font-bold leading-7  md:text-4xl font-primary md:leading-none;
+  }
+
+  h2 {
+    @apply text-xl font-bold leading-7  md:text-2xl font-primary md:leading-8;
+  }
+
+  h3 {
+    @apply text-base font-bold leading-5  md:text-lg font-primary md:leading-6;
+  }
+
+  h4 {
+    @apply text-sm font-bold leading-4  md:text-base font-primary;
+  }
+
+  body {
+    font-family: Fira;
+    @apply text-sm leading-4 font-primary tracking-tight md:text-tiny;
+  }
+
+  .min-h-main {
+    @apply min-h-[calc(100vh-100px)];
+  }
+
+  .layout {
+    max-width: 68rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91.666667%;
+  }
+}
+
+@layer utilities {
+  @variants dark {
+    .bg-dark {
+      background-color: #1e272e;
+    }
+    .dot {
+      transform: translateX(100%);
+    }
+    .bg-darknight {
+      background-color: #1a1f26;
+    }
+
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+  }
+}
+
+.tippy-tooltip [x-circle] {
+  @apply text-xs;
+  background-color: transparent !important;
+}
+
+[fade-bottom] {
+  @apply transition duration-[400ms] ease-out translate-y-15 opacity-0 motion-reduce:translate-y-0 motion-reduce:opacity-100;
+}
+.fade-in-start [fade-bottom] {
+  @apply translate-y-0 opacity-100;
+}
+.fade-in-start [fade-bottom="1"] {
+  transition-delay: 100ms;
+}
+.fade-in-start [fade-bottom="2"] {
+  transition-delay: 200ms;
+}
+.fade-in-start [fade-bottom="3"] {
+  transition-delay: 300ms;
+}
+.fade-in-start [fade-bottom="4"] {
+  transition-delay: 400ms;
+}
+.fade-in-start [fade-bottom="5"] {
+  transition-delay: 500ms;
+}
+
+[fade-side] {
+  @apply transition duration-[400ms] ease-out translate-x-14 opacity-0 motion-reduce:translate-x-0 motion-reduce:opacity-100;
+}
+.fade-in-start [fade-side] {
+  @apply translate-x-0 opacity-100;
+}
+.fade-in-start [fade-side="1"] {
+  transition-delay: 100ms;
+}
+.fade-in-start [fade-side="2"] {
+  transition-delay: 200ms;
+}
+.fade-in-start [fade-side="3"] {
+  transition-delay: 300ms;
+}
+.fade-in-start [fade-side="4"] {
+  transition-delay: 400ms;
+}
+.fade-in-start [fade-side="5"] {
+  transition-delay: 500ms;
+}
+
+@-webkit-keyframes textglow {
+  from {
+    text-shadow: 0 0 2px #15f182, 0 0 1px #00ff4f, 0 0 2px #008b8b;
+  }
+  to {
+    text-shadow: 0 0 1px #20e23a, 0 0 2px #1898f1, 0 0 2px #20b2aa;
+  }
+}
+
+.textglow {
+  animation: textglow 1s ease-in-out infinite alternate;
+}
