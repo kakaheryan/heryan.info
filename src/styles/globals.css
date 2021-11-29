@@ -12,34 +12,14 @@
 
   @font-face {
     font-family: "Fira";
-    src: url("/fonts/fira/woff2/FiraCode-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Fira";
-    src: url("/fonts/fira/woff2/FiraCode-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Fira";
-    src: url("/fonts/fira/woff2/FiraCode-SemiBold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Fira";
-    src: url("/fonts/fira/woff2/FiraCode-Bold.woff2") format("woff2");
-    font-weight: 700;
+    src: url("/fonts/fira/woff2/FiraCode-VF.woff2") format("woff2-variations");
+    /* font-weight requires a range: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide#Using_a_variable_font_font-face_changes */
+    font-weight: 300 700;
     font-style: normal;
   }
 
   h1 {
-    @apply text-2xl font-bold leading-7  md:text-4xl font-primary md:leading-9;
+    @apply text-2xl font-bold leading-7  md:text-4xl font-primary md:leading-none;
   }
 
   h2 {
@@ -95,7 +75,7 @@
 }
 
 [fade-bottom] {
-  @apply transition duration-[400ms] ease-out translate-y-20 opacity-0 motion-reduce:translate-y-0 motion-reduce:opacity-100;
+  @apply transition duration-[400ms] ease-out translate-y-24 opacity-0 motion-reduce:translate-y-0 motion-reduce:opacity-100;
 }
 .fade-in-start [fade-bottom] {
   @apply translate-y-0 opacity-100;
