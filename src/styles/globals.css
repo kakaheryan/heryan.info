@@ -118,6 +118,7 @@
   transition-delay: 500ms;
 }
 
+<<<<<<< HEAD
 .fade-in-start [fade-side="6"] {
   transition-delay: 600ms;
 }
@@ -131,6 +132,8 @@
   transition-delay: 900ms;
 }
 
+=======
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
 @-webkit-keyframes textglow {
   from {
     text-shadow: 0 0 2px #15f182, 0 0 1px #00ff4f, 0 0 2px #008b8b;

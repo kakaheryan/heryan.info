@@ -16,8 +16,13 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+<<<<<<< HEAD
     "noImplicitAny": false,
     "jsx": "preserve",
+=======
+    "jsx": "preserve",
+    "noImplicitAny": false,
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
     "baseUrl": "./src",
     "paths": {
       "@/*": [

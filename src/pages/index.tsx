@@ -64,7 +64,11 @@ export default function IndexPage() {
                         className="font-bold bg-gradient-to-r from-green-800 to-green-500 text-gray-200 inline-block px-4 py-2 rounded-lg"
                         fade-bottom="3"
                       >
+<<<<<<< HEAD
                         Explore AboutMe
+=======
+                        Explore My Profile
+>>>>>>> 61368d4fb33eb41350e300d7900520ca114ae7f8
                       </a>
                     </Link>
                   </figcaption>
