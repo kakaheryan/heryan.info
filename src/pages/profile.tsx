@@ -110,7 +110,7 @@ export default function ProfilePage() {
               "row-span-3 col-span-2",
               "flex flex-col rounded-md bg-white dark:bg-gray-800",
               " my-4 p-4 shadow-xl overflow-hidden",
-              "fade-in-start"
+              useLoaded() && "fade-in-start"
             )}
           >
             <Skillbase className="mb-4">

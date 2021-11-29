@@ -22,9 +22,9 @@ export default function SkillBase({ children, className }: MainPageProps) {
       <div className={className}>
         {children}
         <ul className="flex-shrink-0 grid sm:grid-cols-2  md:grid-cols-3 gap-2">
-          {frontend.map((skills) => (
+          {frontend.map((skills, index) => (
             <>
-              <li className="relative text-xs ">
+              <li className="relative text-xs" fade-side={ 1 + index }>
                 <div className="pl-1">
                   <skills.icons className="w-5 h-5 text-gray-400 inline-block mb-1" />
                   <span className="p-1 text-gray-500 dark:text-gray-300">

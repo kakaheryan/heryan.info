@@ -118,6 +118,19 @@
   transition-delay: 500ms;
 }
 
+.fade-in-start [fade-side="6"] {
+  transition-delay: 600ms;
+}
+.fade-in-start [fade-side="7"] {
+  transition-delay: 700ms;
+}
+.fade-in-start [fade-side="8"] {
+  transition-delay: 800ms;
+}
+.fade-in-start [fade-side="9"] {
+  transition-delay: 900ms;
+}
+
 @-webkit-keyframes textglow {
   from {
     text-shadow: 0 0 2px #15f182, 0 0 1px #00ff4f, 0 0 2px #008b8b;
