@@ -23,7 +23,7 @@ export default function ProjectPage({
               My Projects
             </h3>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
-              {repos.map((repo) => (
+              {repos.map((repo:any) => (
                 <li
                   key={repo.i}
                   className={clsx(
