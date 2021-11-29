@@ -54,25 +54,11 @@ export default function ProfilePage() {
                 <span className="text-xs text-gray-300" fade-side="2">
                   Full-Stack Developer
                 </span>
-                <div className="flex flex-row" fade-side="3">
-                  {sociallink.map((sosial) => (
-                    <>
-                      <Link href={sosial.link}>
-                        <a
-                          className={clsx(
-                            sosial.color,
-                            "p-1 rounded-md mr-2 text-white"
-                          )}
-                        >
-                          <sosial.icons className="w-5 h-5" />
-                        </a>
-                      </Link>
-                    </>
-                  ))}
+                <div className="text-gray-600 dark:text-gray-300" fade-side="3">
+                  Ciamis, Indonesia
                 </div>
               </div>
             </div>
-
             <div className="rounded-md mt-2">
               <h3
                 className="title-bar mb-2 py-2 border-b border-gray-500"
