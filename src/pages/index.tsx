@@ -61,6 +61,7 @@ export default function IndexPage() {
                           "bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400",
                           " dark:via-primary-300 z-0"
                         )}
+                        fade-bottom="4"
                       />
                       <Link href="/profile">
                         <a
@@ -93,6 +94,7 @@ export default function IndexPage() {
                       "bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400",
                       " dark:via-primary-300 z-0"
                     )}
+                    fade-bottom="4"
                   />
 
                   <TypedText
