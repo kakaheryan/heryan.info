@@ -26,10 +26,10 @@ export default function ProjectPage({
             </h2>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
               {repos.map((repo, index) => (
-                <li key={repo.i} className="relative">
+                <li key={repo.i} className="block overflow-hidden">
                   <div
                     className={clsx(
-                      "bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden",
+                      "bg-white dark:bg-gray-700 rounded-xl border border-gray-400",
                       "md:flex"
                     )}
                     fade-side={1 + index}
@@ -43,10 +43,7 @@ export default function ProjectPage({
                       </a>
 
                       <blockquote>
-                        <p
-                          className="font-light mb-1 text-xs text-gray-500 dark:text-gray-400"
-                          data-fade="3"
-                        >
+                        <p className="font-light mb-1 text-xs text-gray-500 dark:text-gray-400">
                           {repo.html_url}
                         </p>
                       </blockquote>
