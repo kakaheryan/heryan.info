@@ -5,6 +5,7 @@ import * as React from "react";
 import useLoaded from "@/hooks/useLoaded";
 
 import TextGradient from "@/components/attr/TextGradient";
+import { TypedText } from "@/components/attr/TypedText";
 // import { InView } from 'react-intersection-observer';
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
@@ -18,7 +19,7 @@ export default function IndexPage() {
         <main>
           <section
             className={clsx(
-              "flex flex-col justify-center mb-10 min-h-main layout",
+              "relative flex flex-col justify-center mb-16 min-h-main layout",
               useLoaded() && "fade-in-start"
             )}
           >
@@ -30,17 +31,11 @@ export default function IndexPage() {
                 )}
               >
                 <div className="space-y-3">
-                  <h2
-                    className="bg-gradient-to-r from-yellow-600 via-green-500 to-green-400 bg-clip-text text-transparent font-bold text-2xl md:text-4xl"
-                    fade-side="2"
-                  >
-                    Hi There!
+                  <h2 className="text-2xl md:text-4xl" fade-side="2">
+                    <TextGradient>Hi There!</TextGradient>
                   </h2>
-                  <h1
-                    className="bg-gradient-to-r from-yellow-600 via-green-500 to-green-400 bg-clip-text text-transparent font-bold text-2xl md:text-4xl"
-                    fade-side="3"
-                  >
-                    My Name Is Heryanto
+                  <h1 fade-side="3">
+                    <TextGradient>My Name Is Heryanto</TextGradient>
                   </h1>
                   <blockquote>
                     <p
@@ -58,10 +53,10 @@ export default function IndexPage() {
                       for backend and frontend from Javascript
                     </p>
                   </blockquote>
-                  <figcaption className="text-md">
+                  <figcaption className="text-lg">
                     <Link href="/profile">
                       <a
-                        className="font-bold bg-gradient-to-r from-green-800 to-green-500 text-gray-200 inline-block px-4 py-2 rounded-lg"
+                        className="font-bold bg-gradient-to-r from-green-500 via-green-400 to-primary-300 text-gray-200 inline-block px-4 py-3 rounded-lg"
                         fade-bottom="4"
                       >
                         Explore AboutMe
@@ -79,6 +74,35 @@ export default function IndexPage() {
                 The framework used:
               </h2>
               <TechStack />
+            </div>
+            <div>
+              <div className="absolute  bottom-0 left-0 right-0 m-auto text-center ">
+                <div className="inline-block relative">
+                  <div
+                    className={clsx(
+                      "absolute -inset-0.5 rounded blur",
+                      "bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400",
+                      " dark:via-primary-300 z-0"
+                    )}
+                  />
+
+                  <TypedText
+                    className="inline-block text-medium font-bold"
+                    options={{
+                      strings: [
+                        "i&apos;m a Fullstack Web developer",
+                        "i&apos;m a UI/UX Designer",
+                        "i&apos;m  a Next.js Developer",
+                        "i&apos;m a Jamstack Developer",
+                        "i&apos;m a Nodejs Developer",
+                        "i&apos;m a PHP Developer",
+                        "i&apos;m a Laravel Developer",
+                      ],
+                    }}
+                    fade-bottom="4"
+                  />
+                </div>
+              </div>
             </div>
           </section>
         </main>

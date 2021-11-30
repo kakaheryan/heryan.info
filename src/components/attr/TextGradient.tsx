@@ -9,7 +9,7 @@ export default function TextGradient({ children, className }: AccentType) {
       className={clsx(
         className,
         "bg-clip-text text-transparent",
-        "bg-gradient-to-r from-green-500 via-green-400 to-yellow-400"
+        "bg-gradient-to-r from-primary-500 via-primary-200 to-primary-300"
       )}
       dataa-fade="5"
     >

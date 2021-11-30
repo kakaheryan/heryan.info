@@ -37,7 +37,7 @@ export default function Header() {
             <ul
               className={clsx(
                 "flex items-center justify-between space-x-0.5",
-                "font-bold antialiased md:space-x-2 md:text-sm"
+                "font-bold antialiased md:space-x-2 md:text-lg"
               )}
             >
               {links.map(({ href, label }) => (
@@ -45,8 +45,8 @@ export default function Header() {
                   <Link href={href}>
                     <a
                       className={clsx(
-                        "p-1 bg-clip-text text-transparent ",
-                        "bg-gradient-to-r from-yellow-400  via-green-400 to-green-500",
+                        "p-1 bg-clip-text text-transparent",
+                        "bg-gradient-to-r from-primary-500 via-primary-200 to-primary-300",
                         href === baseRoute && "textglow"
                       )}
                     >

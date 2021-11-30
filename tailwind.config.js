@@ -1,5 +1,13 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
 
 module.exports = {
   mode: 'jit',
@@ -27,6 +35,15 @@ module.exports = {
         primary: ['Fira'],
       },
       colors: {
+        primary: {
+          // Customize it on globals.css :root
+          100: withOpacity('--tw-clr-primary-100'),
+          200: withOpacity('--tw-clr-primary-200'),
+          300: withOpacity('--tw-clr-primary-300'),
+          400: withOpacity('--tw-clr-primary-400'),
+          500: withOpacity('--tw-clr-primary-500'),
+          600: withOpacity('--tw-clr-primary-600'),
+        },
         dark: '#1e272e',
       },
 

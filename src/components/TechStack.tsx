@@ -25,7 +25,7 @@ export default function TechStack() {
             className={clsx(
               "w-10 h-10  md:w-10 md:h-10",
               "dark:hover:text-yellow-600 hover:text-yellow-600",
-              "text-green-500 transform -rotate-45"
+              "text-primary-200 transform -rotate-45"
             )}
             fade-side={3 + index}
           />
@@ -52,7 +52,8 @@ const stacks = [
     icon: SiTypescript,
     tooltip: (
       <>
-        The reason I use this framework. TypeScript is a superset of JavaScript
+        The reason I use this framework.{" "}
+        <TextGradient> TypeScript</TextGradient> is a superset of JavaScript
         which primarily provides optional static typing, classes and interfaces.
         TypeScript make it easy to organize our code and provides Object
         Oriented Programming.

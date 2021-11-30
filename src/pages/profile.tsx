@@ -29,7 +29,7 @@ export default function ProfilePage() {
             className={clsx(
               "row-span-2 col-span-1",
               "flex flex-col justify-center my-4 p-2 rounded-md",
-              "bg-white dark:bg-gray-800 overflow-hidden",
+              "bg-white dark:bg-opacity overflow-hidden",
               useLoaded() && "fade-in-start"
             )}
           >
@@ -108,7 +108,7 @@ export default function ProfilePage() {
           <section
             className={clsx(
               "row-span-3 col-span-2",
-              "flex flex-col rounded-md bg-white dark:bg-gray-800",
+              "flex flex-col rounded-md bg-white dark:bg-opacity",
               " my-4 p-4 shadow-xl overflow-hidden",
               useLoaded() && "fade-in-start"
             )}

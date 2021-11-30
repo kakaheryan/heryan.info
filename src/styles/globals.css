@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Customize these variable */
+  /* https://github.com/adamwathan/tailwind-css-variable-text-opacity-demo */
+
+  --tw-clr-primary-100: 143, 199, 0;
+  --tw-clr-primary-200: 0, 232, 159;
+  --tw-clr-primary-300: 0, 219, 243;
+  --tw-clr-primary-400: 255, 0, 123;
+  --tw-clr-primary-500: 255, 221, 0;
+  --tw-clr-primary-600: 211, 243, 0;
+
+  --clr-primary-200: rgb(var(--tw-clr-primary-100)); /* #8fc700 */
+  --clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #00e89f */
+  --clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #00dbf3 */
+  --clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #ff007b */
+  --clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #ffdd00 */
+  --clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #d3f300 */
+}
+
 @layer base {
   @font-face {
     font-family: "Fira";
@@ -36,7 +55,7 @@
 
   body {
     font-family: Fira;
-    color: #333333;
+    color: #33333;
     @apply text-sm leading-4 font-primary tracking-tight md:text-tiny;
   }
 
@@ -55,17 +74,21 @@
 @layer utilities {
   @variants dark {
     .bg-dark {
-      background-color: #1e272e;
+      background-color: #0a1e2b;
     }
     .dot {
       transform: translateX(100%);
     }
     .bg-darknight {
-      background-color: #1a1f26;
+      background-color: #07151f;
     }
 
     .filter-grayscale {
       filter: grayscale(100%);
+    }
+
+    .bg-opacity {
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 }

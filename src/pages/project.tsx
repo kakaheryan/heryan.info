@@ -4,6 +4,7 @@ import * as React from "react";
 
 import useLoaded from "@/hooks/useLoaded";
 
+import TextGradient from "@/components/attr/TextGradient";
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
 
@@ -22,7 +23,7 @@ export default function ProjectPage({
             )}
           >
             <h2 className="flex-none py-1 border-b-2 border-gray-300 dark:border-green-300">
-              My Projects
+              <TextGradient> My Projects </TextGradient>
             </h2>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
               {repos.map((repo, index) => (
