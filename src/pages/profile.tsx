@@ -79,15 +79,15 @@ export default function ProfilePage() {
             <div className="rounded-md mt-2">
               <h3
                 className="title-bar mb-2 py-2 border-b border-gray-500"
-                fade-side="5"
+                fade-side="4"
               >
                 <TextGradient className="inline-block">Contact</TextGradient>
               </h3>
-              <div className="px-1 flex flex-col gap-2" fade-bottom="5">
+              <div className="px-1 flex flex-col gap-2" fade-bottom="4">
                 {sociallink.map((sosial, index) => (
                   <>
                     <Link href={sosial.link}>
-                      <a fade-side={4 + index}>
+                      <a fade-side={1 + index}>
                         <sosial.icons
                           className={clsx(
                             sosial.color,

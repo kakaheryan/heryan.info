@@ -62,7 +62,7 @@ export default function IndexPage() {
                     <Link href="/profile">
                       <a
                         className="font-bold bg-gradient-to-r from-green-800 to-green-500 text-gray-200 inline-block px-4 py-2 rounded-lg"
-                        fade-bottom="3"
+                        fade-bottom="2"
                       >
                         Explore AboutMe
                       </a>
@@ -74,7 +74,7 @@ export default function IndexPage() {
             <div className="my-2 pb-4 md:px-8">
               <h2
                 className="text-lg font-semibold text-gray-600 dark:text-gray-300"
-                fade-bottom="4"
+                fade-bottom="3"
               >
                 The framework used:
               </h2>

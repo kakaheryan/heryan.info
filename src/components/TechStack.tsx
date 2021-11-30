@@ -27,7 +27,7 @@ export default function TechStack() {
               "dark:hover:text-yellow-600 hover:text-yellow-600",
               "text-green-500 transform -rotate-45"
             )}
-            fade-side={4 + index}
+            fade-side={1 + index}
           />
         </Tooltip>
       ))}
