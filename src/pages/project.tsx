@@ -29,7 +29,7 @@ export default function ProjectPage({
                 <li key={repo.i}>
                   <div
                     className={clsx(
-                      "w-full h-full bg-white dark:bg-gray-700 rounded-xl shadow-md",
+                      "bg-white dark:bg-gray-700 rounded-xl shadow-md",
                       "md:flex"
                     )}
                     fade-side={1 + index}
