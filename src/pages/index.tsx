@@ -19,7 +19,7 @@ export default function IndexPage() {
         <main>
           <section
             className={clsx(
-              "relative flex flex-col justify-center mb-16 min-h-main layout",
+              "relative flex flex-col justify-center mb-10 min-h-main layout",
               useLoaded() && "fade-in-start"
             )}
           >

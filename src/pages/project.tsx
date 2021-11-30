@@ -30,7 +30,7 @@ export default function ProjectPage({
                 <li key={repo.i} className="block overflow-hidden">
                   <div
                     className={clsx(
-                      "bg-white dark:bg-gray-700 rounded-xl border  dark:border-none border-gray-200",
+                      "bg-white dark:bg-opacity rounded-xl border  dark:border-none border-gray-200",
                       "md:flex"
                     )}
                     fade-side={1 + index}
@@ -38,7 +38,7 @@ export default function ProjectPage({
                     <div className="p-3">
                       <a
                         href={repo.html_url}
-                        className=" mt-1 text-base md:text-lg font-bold bg-clip-text dark:bg-gradient-to-r from-green-500 to-green-300 dark:text-transparent hover:underline"
+                        className=" mt-1 text-base md:text-lg font-bold bg-clip-text dark:bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400 dark:text-transparent hover:underline"
                       >
                         {repo.name}
                       </a>
