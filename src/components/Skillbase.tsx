@@ -36,7 +36,7 @@ export default function SkillBase({ children, className }: MainPageProps) {
                 </div>
                 <div className="w-full  h-4 mt-1 bg-gray-200 dark:bg-gray-600 rounded-md overflow-hidden">
                   <div
-                    className="bg-gradient-to-r from-red-600 via-yellow-500 to-green-600 h-4 w-full"
+                    className="bg-gradient-to-r from-red-600 via-primary-500 to-green-600 h-4 w-full"
                     style={{ width: skills.rating + "%" }}
                   ></div>
                 </div>

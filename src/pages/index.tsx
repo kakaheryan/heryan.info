@@ -39,7 +39,7 @@ export default function IndexPage() {
                   </h1>
                   <blockquote>
                     <p
-                      className="font-light mb-10 md:text-medium text-gray-500 dark:text-gray-300"
+                      className="font-light mb-5 md:text-medium text-gray-500 dark:text-gray-300"
                       fade-side="4"
                     >
                       You can call me{" "}
@@ -53,20 +53,29 @@ export default function IndexPage() {
                       for backend and frontend from Javascript
                     </p>
                   </blockquote>
-                  <figcaption className="text-lg">
-                    <Link href="/profile">
-                      <a
-                        className="font-bold bg-gradient-to-r from-green-500 via-green-400 to-primary-300 text-gray-200 inline-block px-4 py-3 rounded-lg"
-                        fade-bottom="4"
-                      >
-                        Explore AboutMe
-                      </a>
-                    </Link>
+                  <figcaption className="p-4 text-lg relative">
+                    <button className="group relative">
+                      <div
+                        className={clsx(
+                          "absolute -inset-0.5 rounded blur",
+                          "bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400",
+                          " dark:via-primary-300 z-0"
+                        )}
+                      />
+                      <Link href="/profile">
+                        <a
+                          className="font-bold bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400 text-gray-200 inline-block px-4 py-3 rounded-lg"
+                          fade-bottom="4"
+                        >
+                          <span className="z-10"> Explore AboutMe</span>
+                        </a>
+                      </Link>
+                    </button>
                   </figcaption>
                 </div>
               </figure>
             </article>
-            <div className="my-2 pb-4 md:px-8">
+            <div className="p-4 md:px-8">
               <h2
                 className="text-lg font-semibold text-gray-600 dark:text-gray-300"
                 fade-bottom="4"
@@ -76,7 +85,7 @@ export default function IndexPage() {
               <TechStack />
             </div>
             <div>
-              <div className="absolute  bottom-0 left-0 right-0 m-auto text-center ">
+              <div className="absolute  bottom-7 left-0 right-0 m-auto text-center ">
                 <div className="inline-block relative">
                   <div
                     className={clsx(

@@ -114,12 +114,12 @@ export default function ProfilePage() {
             )}
           >
             <Skillbase className="mb-4">
-              <h3 className="flex-none py-1 mb-4 text-gray-800 dark:text-green-400 border-b border-gray-300">
+              <h3 className="flex-none py-1 mb-4 text-gray-800 dark:text-primary-300 border-b border-gray-300">
                 Skill &amp; abilities
               </h3>
             </Skillbase>
             <LearnExperience className="mb-4">
-              <h3 className="flex-none py-1 mb-4 text-gray-800 dark:text-green-400 border-b border-gray-300">
+              <h3 className="flex-none py-1 mb-4 text-gray-800 dark:text-primary-300 border-b border-gray-300">
                 Learning Experience
               </h3>
             </LearnExperience>
