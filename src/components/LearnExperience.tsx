@@ -15,12 +15,17 @@ export default function LearnExperience({
         {children}
         <div className="relative">
           <ul className="space-y-3 mb-10">
-            <h3 className="text-pink-600">Course</h3>
+            <h3 className="text-pink-600" fade-side="2">
+              Course
+            </h3>
             {courseArray.map((course, index) => (
               <>
-                <li className="border-l-2 border-pink-700 px-2">
-                  <h4 className="text-blue-400">{course.title}</h4>
-                  <div fade-side={4 + index}>
+                <li>
+                  <div
+                    className="border-l-2 border-pink-700 px-2"
+                    fade-side={4 + index}
+                  >
+                    <h4 className="text-blue-400">{course.title}</h4>
                     <div className="text-xs text-gray-500 dark:text-gray-300">
                       {course.selesai}(
                       <span className="text-yellow-500">graduated</span>)

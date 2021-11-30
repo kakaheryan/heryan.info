@@ -62,7 +62,7 @@ export default function IndexPage() {
                     <Link href="/profile">
                       <a
                         className="font-bold bg-gradient-to-r from-green-800 to-green-500 text-gray-200 inline-block px-4 py-2 rounded-lg"
-                        fade-bottom="2"
+                        fade-bottom="3"
                       >
                         Explore AboutMe
                       </a>

@@ -87,7 +87,7 @@ export default function ProfilePage() {
                 {sociallink.map((sosial, index) => (
                   <>
                     <Link href={sosial.link}>
-                      <a fade-side={1 + index}>
+                      <a fade-side={2 + index}>
                         <sosial.icons
                           className={clsx(
                             sosial.color,
