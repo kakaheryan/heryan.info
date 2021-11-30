@@ -24,7 +24,7 @@ export default function TechStack() {
             key={tech.id}
             className={clsx(
               "w-10 h-10  md:w-10 md:h-10",
-              "dark:hover:text-yellow-600 hover:text-yellow-600",
+              "dark:hover:text-primary-200 hover:text-primary-300",
               "text-primary-500 transform -rotate-45"
             )}
             fade-side={3 + index}

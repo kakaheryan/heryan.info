@@ -157,13 +157,20 @@
 
 @-webkit-keyframes textglow {
   from {
-    text-shadow: 0 0 2px #00dbf3, 0 0 3px #00dbf3, 0 0 2px #ff007b;
+    text-shadow: 0 0 0 3px #fffff, 0 0 2px #00dbf3;
   }
   to {
-    text-shadow: 0 0 1px #20b2aa, 0 0 2px #1898f1, 0 0 2px #20b2aa;
+    text-shadow: 0 0 1px #ffffff, 0 0 5px #00e89f, 0 0 4px #d3f300;
   }
 }
 
 .textglow {
   animation: textglow 1s ease-in-out infinite alternate;
 }
+
+--clr-primary-200: rgb(var(--tw-clr-primary-100)); /* #8fc700 */
+--clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #00e89f */
+--clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #00dbf3 */
+--clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #ff007b */
+--clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #ffdd00 */
+--clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #d3f300 */
