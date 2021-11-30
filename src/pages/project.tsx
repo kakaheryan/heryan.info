@@ -26,10 +26,10 @@ export default function ProjectPage({
             </h2>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
               {repos.map((repo, index) => (
-                <li key={repo.i}>
+                <li key={repo.i} className="relative">
                   <div
                     className={clsx(
-                      "bg-white dark:bg-gray-700 rounded-xl shadow-md",
+                      "bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden",
                       "md:flex"
                     )}
                     fade-side={1 + index}
