@@ -16,7 +16,7 @@ export default function TechStack() {
     <div className="flex space-x-2 md:space-x-4 mx-auto" fade-bottom="5">
       {stacks.map((tech, index) => (
         <Tooltip
-          className="bg-white border-none text-xs"
+          className="bg-gray-100 border-none text-xs"
           key={tech.id}
           content={<p>{tech.tooltip}</p>}
         >
@@ -25,7 +25,7 @@ export default function TechStack() {
             className={clsx(
               "w-10 h-10  md:w-10 md:h-10",
               "dark:hover:text-primary-200 hover:text-primary-300",
-              "text-primary-500 transform -rotate-45"
+              "text-primary-200 dark:text-primary-300 transform -rotate-45"
             )}
             fade-side={3 + index}
           />

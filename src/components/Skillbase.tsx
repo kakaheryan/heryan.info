@@ -23,25 +23,23 @@ export default function SkillBase({ children, className }: MainPageProps) {
         {children}
         <ul className="flex-shrink-0 grid sm:grid-cols-2  md:grid-cols-2 gap-2">
           {frontend.map((skills, index) => (
-            <>
-              <li className="relative text-xs" fade-side={1 + index}>
-                <div className="pl-1">
-                  <skills.icons className="w-5 h-5 text-gray-400 inline-block mb-1" />
-                  <span className="p-1 text-gray-500 dark:text-gray-300">
-                    {skills.text}
-                  </span>
-                  <div className="rating text-gray-400 dark:text-gray-300 absolute  top-2 right-0">
-                    {skills.rating}%
-                  </div>
+            <li key={index} className="relative text-xs" fade-side={1 + index}>
+              <div className="pl-1">
+                <skills.icons className="w-5 h-5 text-gray-400 inline-block mb-1" />
+                <span className="p-1 text-gray-500 dark:text-gray-300">
+                  {skills.text}
+                </span>
+                <div className="rating text-gray-400 dark:text-gray-300 absolute  top-2 right-0">
+                  {skills.rating}%
                 </div>
-                <div className="w-full  h-4 mt-1 bg-gray-200 dark:bg-gray-600 rounded-md overflow-hidden">
-                  <div
-                    className="bg-gradient-to-r from-red-600 via-primary-500 to-green-600 h-4 w-full"
-                    style={{ width: skills.rating + "%" }}
-                  ></div>
-                </div>
-              </li>
-            </>
+              </div>
+              <div className="w-full  h-4 mt-1 bg-gray-200 dark:bg-gray-600 rounded-md overflow-hidden">
+                <div
+                  className="bg-gradient-to-r from-red-600 via-primary-500 to-green-600 h-4 w-full"
+                  style={{ width: skills.rating + "%" }}
+                ></div>
+              </div>
+            </li>
           ))}
         </ul>
       </div>

@@ -1,6 +1,8 @@
 import * as React from "react";
 import { RiAlarmWarningFill } from "react-icons/ri";
 
+import LinkHref from "@/components/etc/LinkHref";
+
 export default function NotFoundPage() {
   return (
     <>
@@ -12,7 +14,9 @@ export default function NotFoundPage() {
               className="text-yellow-300 animate-flicker drop-shadow-glow"
             />
             <h1 className="mt-8">Page Not Found</h1>
-            <span className="mt-4">Back to Home</span>
+            <LinkHref href="/" className="mt-4 text-lg textglow">
+              Back to Home
+            </LinkHref>
           </div>
         </section>
       </main>

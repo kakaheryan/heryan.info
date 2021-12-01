@@ -41,12 +41,11 @@ export default function Header() {
               )}
             >
               {links.map(({ href, label }) => (
-                <li key={`${href}${label}`}>
+                <li key={`${label}`}>
                   <Link href={href}>
                     <a
                       className={clsx(
-                        "p-1 bg-clip-text text-transparent",
-                        "bg-gradient-to-r from-primary-500 via-primary-200 to-primary-300",
+                        "p-1 text-green-500 dark:text-primary-300",
                         href === baseRoute && "textglow"
                       )}
                     >
@@ -62,7 +61,7 @@ export default function Header() {
             >
               <span className="text-white bg-gray-400 dark:bg-green-600 pl-0.5 pt-0.5 ml-0.5  w-4 h-4 my-auto rounded-full transition dark:dot ">
                 {theme === "dark" ? (
-                  <FiSun className="" size={12} />
+                  <FiSun size={12} />
                 ) : (
                   <FiMoon size={12} className="text-white" />
                 )}

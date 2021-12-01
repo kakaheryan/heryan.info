@@ -1,17 +1,18 @@
 import clsx from "clsx";
 import Image from "next/image";
-import Link from "next/link";
 import * as React from "react";
 import {
   SiFacebook,
   SiInstagram,
   SiLinkedin,
   SiWhatsapp,
+  SiYoutube,
 } from "react-icons/si";
 
 import useLoaded from "@/hooks/useLoaded";
 
 import TextGradient from "@/components/attr/TextGradient";
+import LinkHref from "@/components/etc/LinkHref";
 import HeadMeta from "@/components/HeadMeta";
 import LearnExperience from "@/components/LearnExperience";
 import Layout from "@/components/main/Layout";
@@ -83,25 +84,23 @@ export default function ProfilePage() {
               >
                 <TextGradient className="inline-block">Contact</TextGradient>
               </h3>
-              <div className="px-1 flex flex-col gap-2" fade-bottom="4">
+              <ul className="px-1 flex flex-col gap-2" fade-bottom="4">
                 {sociallink.map((sosial, index) => (
-                  <>
-                    <Link href={sosial.link}>
-                      <a fade-side={4 + index}>
-                        <sosial.icons
-                          className={clsx(
-                            sosial.color,
-                            "p-1 w-6 h-6 rounded-md text-white inline-block mr-2"
-                          )}
-                        />
-                        {"https://wa.me/6282321736345" === sosial.link
-                          ? sosial.link.replace("https://wa.me/", "+")
-                          : sosial.link.replace("https://", "")}
-                      </a>
-                    </Link>
-                  </>
+                  <li key={index} fade-bottom={index}>
+                    <LinkHref href={sosial.link} fade-side={3 + index}>
+                      <sosial.icons
+                        className={clsx(
+                          sosial.color,
+                          "p-1 w-6 h-6 rounded-md text-white inline-block mr-2"
+                        )}
+                      />
+                      <span className="text-green-700 dark:text-primary-200">
+                        {sosial.name}
+                      </span>
+                    </LinkHref>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </section>
 
@@ -114,12 +113,12 @@ export default function ProfilePage() {
             )}
           >
             <Skillbase className="mb-4">
-              <h3 className="flex-none py-1 mb-4 text-gray-800 dark:text-primary-300 border-b border-gray-300">
+              <h3 className="flex-none py-1 mb-4 text-green-600 dark:text-primary-300 border-b border-gray-300">
                 Skill &amp; abilities
               </h3>
             </Skillbase>
             <LearnExperience className="mb-4">
-              <h3 className="flex-none py-1 mb-4 text-gray-800 dark:text-primary-300 border-b border-gray-300">
+              <h3 className="flex-none py-1 mb-4 text-green-600 dark:text-primary-300 border-b border-gray-300">
                 Learning Experience
               </h3>
             </LearnExperience>
@@ -132,23 +131,33 @@ export default function ProfilePage() {
 
 const sociallink = [
   {
+    name: "Kaka Heryan",
     icons: SiFacebook,
     link: "https://fb.me/heryanofficial",
     color: "bg-blue-800 ",
   },
   {
+    name: "Kaka Heryan",
     icons: SiInstagram,
     link: "https://instagram.com/kakaheryan",
     color: "bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-500",
   },
   {
+    name: "+6282321736345",
     icons: SiWhatsapp,
     link: "https://wa.me/6282321736345",
     color: "bg-green-500",
   },
   {
+    name: "Kaka Heryan",
     icons: SiLinkedin,
     link: "https://linkedin.com/in/kakaheryan",
     color: "bg-blue-500",
+  },
+  {
+    name: "Heryan Official",
+    icons: SiYoutube,
+    link: "https://www.youtube.com/channel/UClg-o9XMUPZSTKgM-MTeilA",
+    color: "bg-red-600",
   },
 ];

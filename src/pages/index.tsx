@@ -1,11 +1,11 @@
 import clsx from "clsx";
-import Link from "next/link";
 import * as React from "react";
 
 import useLoaded from "@/hooks/useLoaded";
 
 import TextGradient from "@/components/attr/TextGradient";
 import { TypedText } from "@/components/attr/TypedText";
+import ButtonAnimate from "@/components/etc/ButtonAnimate";
 // import { InView } from 'react-intersection-observer';
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
@@ -31,11 +31,17 @@ export default function IndexPage() {
                 )}
               >
                 <div className="space-y-3">
-                  <h2 className="text-2xl md:text-4xl" fade-side="2">
-                    <TextGradient>Hi There!</TextGradient>
+                  <h2
+                    className="text-2xl md:text-4xl text-green-500 dark:text-primary-300"
+                    fade-side="2"
+                  >
+                    Hi There!
                   </h2>
-                  <h1 fade-side="3">
-                    <TextGradient>My Name Is Heryanto</TextGradient>
+                  <h1
+                    className="text-green-500 dark:text-primary-300"
+                    fade-side="3"
+                  >
+                    My Name Is Heryanto
                   </h1>
                   <blockquote>
                     <p
@@ -53,25 +59,14 @@ export default function IndexPage() {
                       for backend and frontend from Javascript
                     </p>
                   </blockquote>
-                  <figcaption className="p-4 text-lg relative">
-                    <button className="group relative">
-                      <div
-                        className={clsx(
-                          "absolute -inset-0.5 rounded blur",
-                          "bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400",
-                          " dark:via-primary-300 z-0"
-                        )}
-                        fade-bottom="4"
-                      />
-                      <Link href="/profile">
-                        <a
-                          className="font-bold bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400 text-gray-200 inline-block px-4 py-3 rounded-lg"
-                          fade-bottom="4"
-                        >
-                          <span className="z-10"> Explore AboutMe</span>
-                        </a>
-                      </Link>
-                    </button>
+                  <figcaption className="p-4 text-lg relative" fade-bottom="4">
+                    <ButtonAnimate
+                      href="/profile"
+                      className="font-bold bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400 text-gray-200 inline-block px-4 py-3 rounded-lg text-gray-200"
+                    >
+                      {" "}
+                      Explore AboutMe
+                    </ButtonAnimate>
                   </figcaption>
                 </div>
               </figure>
@@ -91,14 +86,14 @@ export default function IndexPage() {
                   <div
                     className={clsx(
                       "absolute -inset-0.5 rounded blur",
-                      "bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400",
+                      "bg-gradient-to-r from-primary-600 via-primary-300 to-primary-400",
                       " dark:via-primary-300 z-0"
                     )}
                     fade-bottom="4"
                   />
 
                   <TypedText
-                    className="inline-block text-medium font-bold"
+                    className="inline-block text-white text-medium font-bold"
                     options={{
                       strings: [
                         "i&apos;m a Fullstack Web developer",

@@ -5,6 +5,7 @@ import * as React from "react";
 import useLoaded from "@/hooks/useLoaded";
 
 import TextGradient from "@/components/attr/TextGradient";
+import LinkHref from "@/components/etc/LinkHref";
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
 
@@ -27,7 +28,7 @@ export default function ProjectPage({
             </h2>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
               {repos.map((repo, index) => (
-                <li key={repo.i} className="block overflow-hidden">
+                <li key={index} className="block overflow-hidden">
                   <div
                     className={clsx(
                       "bg-white dark:bg-opacity rounded-xl border  dark:border-none border-gray-200",
@@ -36,12 +37,12 @@ export default function ProjectPage({
                     fade-side={1 + index}
                   >
                     <div className="p-3">
-                      <a
+                      <LinkHref
                         href={repo.html_url}
                         className=" mt-1 text-base md:text-lg font-bold bg-clip-text dark:bg-gradient-to-r from-primary-500 via-primary-300 to-primary-400 dark:text-transparent hover:underline"
                       >
                         {repo.name}
-                      </a>
+                      </LinkHref>
 
                       <blockquote>
                         <p className="font-light mb-1 text-xs text-gray-500 dark:text-gray-400">

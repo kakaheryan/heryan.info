@@ -19,25 +19,21 @@ export default function LearnExperience({
               Course
             </h3>
             {courseArray.map((course, index) => (
-              <>
-                <li>
-                  <div
-                    className="border-l-2 border-pink-700 px-2"
-                    fade-side={4 + index}
-                  >
-                    <h4 className="text-blue-400">{course.title}</h4>
-                    <div className="text-xs text-gray-500 dark:text-gray-300">
-                      {course.selesai}(
-                      <span className="text-yellow-500">graduated</span>)
-                    </div>
-                    <div className="mt-0.5">
-                      <span className="font-bold text-xs">
-                        {course.lembaga}
-                      </span>
-                    </div>
+              <li key={index}>
+                <div
+                  className="border-l-2 border-primary-400 px-2"
+                  fade-side={4 + index}
+                >
+                  <h4 className="text-blue-400">{course.title}</h4>
+                  <div className="text-xs text-gray-500 dark:text-gray-300">
+                    {course.selesai}(
+                    <span className="text-yellow-500">graduated</span>)
                   </div>
-                </li>
-              </>
+                  <div className="mt-0.5">
+                    <span className="font-bold text-xs">{course.lembaga}</span>
+                  </div>
+                </div>
+              </li>
             ))}
           </ul>
           <ul className="education block space-y-3 mb-10">
