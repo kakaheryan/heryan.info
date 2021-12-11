@@ -1,23 +1,45 @@
+import clsx from "clsx";
+import { InferGetStaticPropsType } from "next";
 import * as React from "react";
 
-import TextGradient from "@/components/attr/TextGradient";
+import { getAllFiles } from "@/lib/Client";
+import useLoaded from "@/hooks/useLoaded";
+
+import EmptyPage from "@/components/content/EmptyPage";
+import ForListItem from "@/components/content/ForListItem";
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
 
-export default function BlogPage() {
+export default function IndexPage({
+  posts,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <>
-      <Layout>
-        <HeadMeta templateTitle="My Blog" />
-        <main>
-          <section className="flex flex-row justify-center text-center mb-10 min-h-main layout fade-in-start">
-            <TextGradient className="text-3xl text-center font-bold my-auto p-4">
-              {" "}
-              Blog For Next Project{" "}
-            </TextGradient>
-          </section>
-        </main>
-      </Layout>
-    </>
+    <Layout>
+      <HeadMeta templateTitle="Blog Test" />
+      <main>
+        <section className={clsx(useLoaded() && "fade-in-start")}>
+          <div className="py-12 layout">
+            <h1 className="text-3xl md:text-5xl">Blog</h1>
+            <ul
+              className="grid gap-4 mt-4 sm:grid-cols-2 xl:grid-cols-3"
+              fade-side="5"
+            >
+              {posts.length > 0 ? (
+                posts.map((post, index) => (
+                  <ForListItem key={post.slug} post={post} fade-side={index} />
+                ))
+              ) : (
+                <EmptyPage />
+              )}
+            </ul>
+          </div>
+        </section>
+      </main>
+    </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const posts = await getAllFiles("blog");
+  return { props: { posts } };
 }

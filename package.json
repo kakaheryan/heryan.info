@@ -15,7 +15,13 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"@headlessui/react": "^1.4.2",
+		"axios": "^0.24.0",
 		"clsx": "^1.1.1",
+		"date-fns": "^2.27.0",
+		"esbuild": "^0.14.1",
+		"gray-matter": "^4.0.3",
+		"mdx-bundler": "^8.0.0",
 		"next": "12.0.4",
 		"next-themes": "^0.0.15",
 		"preact": "^10.6.1",
@@ -23,6 +29,8 @@
 		"react-dom": "17.0.2",
 		"react-icons": "^4.3.1",
 		"react-tippy": "^1.4.0",
+		"reading-time": "^1.5.0",
+		"swr": "^1.1.0",
 		"typed.js": "^2.0.12"
 	},
 	"devDependencies": {
