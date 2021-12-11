@@ -22,7 +22,7 @@
 		"esbuild": "^0.14.1",
 		"gray-matter": "^4.0.3",
 		"mdx-bundler": "^8.0.0",
-		"next": "12.0.4",
+		"next": "^12.0.7",
 		"next-themes": "^0.0.15",
 		"preact": "^10.6.1",
 		"react": "^17.0.2",

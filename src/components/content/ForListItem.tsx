@@ -6,10 +6,10 @@ import { HiOutlineClock, HiOutlineEye } from "react-icons/hi";
 import Tag from "@/components/content/Tag";
 import LinkHref from "@/components/etc/LinkHref";
 
-import { BlogFrontmatter, InjectedMeta } from "@/types/content";
+import { BlogFrontmatter } from "@/types/content";
 
 type BlogCardProps = {
-  post: BlogFrontmatter & InjectedMeta;
+  post: BlogFrontmatter;
   checkTagged?: (tag: string) => boolean;
 } & React.ComponentPropsWithoutRef<"li">;
 
