@@ -78,7 +78,9 @@ export default function SingleBlogPage({
                 </div>
               </div>
               {!frontmatter?.englishOnly && (
-                <LinkHref href="/blog/" className="mt-2"></LinkHref>
+                <LinkHref href="/blog/" className="mt-2">
+                  Back To Blog Page
+                </LinkHref>
               )}
             </div>
 
