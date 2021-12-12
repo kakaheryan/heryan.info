@@ -15,7 +15,7 @@ export default function IndexPage({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Layout>
-      <HeadMeta templateTitle="Blog Test" />
+      <HeadMeta templateTitle="Blog MDX" />
       <main>
         <section className={clsx(useLoaded() && "fade-in-start")}>
           <div className="py-12 layout">
