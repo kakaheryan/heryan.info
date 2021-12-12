@@ -13,7 +13,7 @@ type BlogCardProps = {
   checkTagged?: (tag: string) => boolean;
 } & React.ComponentPropsWithoutRef<"li">;
 
-export default function ForListItem({
+export default function ListContent({
   post,
   className,
   checkTagged,
