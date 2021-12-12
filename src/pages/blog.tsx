@@ -6,7 +6,7 @@ import { getAllFiles } from "@/lib/Client";
 import useLoaded from "@/hooks/useLoaded";
 
 import EmptyPage from "@/components/content/EmptyPage";
-import ForListItem from "@/components/content/ForListItem";
+import ListContent from "@/components/content/ListContent";
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
 
@@ -26,7 +26,7 @@ export default function IndexPage({
             >
               {posts.length > 0 ? (
                 posts.map((post, index) => (
-                  <ForListItem key={post.slug} post={post} fade-side={index} />
+                  <ListContent key={post.slug} post={post} fade-side={index} />
                 ))
               ) : (
                 <EmptyPage />
