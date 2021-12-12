@@ -22,11 +22,11 @@ export default function IndexPage({
             <h1 className="text-3xl md:text-5xl">Blog</h1>
             <ul
               className="grid gap-4 mt-4 sm:grid-cols-2 xl:grid-cols-3"
-              fade-side="5"
+              fade-side="3"
             >
               {posts.length > 0 ? (
                 posts.map((post, index) => (
-                  <ListContent key={post.slug} post={post} fade-side={index} />
+                  <ListContent key={index} post={post} />
                 ))
               ) : (
                 <EmptyPage />
