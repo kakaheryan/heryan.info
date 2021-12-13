@@ -24,7 +24,7 @@ export default function ListContent({
     <>
       <li
         className={clsx(
-          "relative transform-gpu scale-100 hover:scale-[1.02] active:scale-[0.97]",
+          "block overflow-hidden transform-gpu scale-100 hover:scale-[1.02] active:scale-[0.97]",
           "transition duration-100",
           "animate-shadow",
           className
