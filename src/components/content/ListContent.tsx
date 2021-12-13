@@ -38,23 +38,9 @@ export default function ListContent({
           href={`/post/${post.slug}`}
           fade-side={dataid + 2}
         >
-          <div className="relative">
-            <div
-              className={clsx(
-                "absolute top-0 w-full ",
-                "flex flex-wrap justify-end  text-sm text-black gap-x-2 gap-y-1 dark:text-gray-100"
-              )}
-            >
-              {post.tags.split(",").map((tag) => (
-                <Tag className="bg-opacity-80 dark:!bg-opacity-60" key={tag}>
-                  {checkTagged?.(tag) ? { tag } : tag}
-                </Tag>
-              ))}
-            </div>
-          </div>
           <div className="p-4">
             <h4 className="text-gray-800 dark:text-gray-100">{post.title}</h4>
-            <div className="flex items-center justify-start gap-2 mt-2 text-sm font-medium text-gray-600 dark:text-gray-300">
+            <div className="flex items-center justify-start gap-2 mt-2 text-sm font-medium dark:text-primary-300 text-gray-500">
               <div className="flex items-center gap-1">
                 <HiCalendar className="inline-block text-base" />
                 {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
@@ -64,9 +50,23 @@ export default function ListContent({
                 {post.readingTime.text}
               </div>
             </div>
-            <p className="text-sm text-gray-700 dark:text-gray-300">
+            <p className="text-sm text-gray-800 dark:text-gray-300">
               {post.description}
             </p>
+          </div>
+          <div className="relative ">
+            <div
+              className={clsx(
+                "w-full p-1",
+                "flex flex-wrap justify-end  text-sm text-black gap-x-2 gap-y-1 dark:text-gray-100"
+              )}
+            >
+              {post.tags.split(",").map((tag) => (
+                <Tag className="bg-opacity-80 dark:!bg-opacity-60" key={tag}>
+                  {checkTagged?.(tag) ? { tag } : tag}
+                </Tag>
+              ))}
+            </div>
           </div>
         </LinkHref>
       </li>
