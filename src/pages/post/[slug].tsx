@@ -97,7 +97,7 @@ export default function SingleBlogPage({ code, frontmatter }: BlogType) {
               </article>
 
               <aside className="py-4">
-                <div className="sticky top-36">
+                <div className="sticky top-16">
                   <TableOfContents
                     toc={toc}
                     minLevel={minLevel}

@@ -39,7 +39,7 @@ export default function TableOfContents({
 
       if (!isTotal) {
         // Scroll by the whole clientHeight
-        const offset = 25;
+        const offset = 15;
         const top = isScrollingUp
           ? lTop - container.clientHeight + offset
           : lTop - offset;
@@ -56,10 +56,10 @@ export default function TableOfContents({
       className="overflow-auto max-h-[calc(100vh-9rem-113px)] pb-4 lg:block hidden"
     >
       <h3 className="text-gray-900 dark:text-gray-100 md:text-xl">
-        Table of Contents
+        MY Profile
       </h3>
       <div className="flex flex-col mt-4 space-y-2 text-sm">
-        <span>xxxx</span>
+        <span>Sample For sticky bar side </span>
       </div>
     </div>
   );
