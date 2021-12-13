@@ -20,13 +20,10 @@ export default function IndexPage({
         <section className={clsx(useLoaded() && "fade-in-start")}>
           <div className="py-12 layout">
             <h1 className="text-3xl md:text-5xl">Blog</h1>
-            <ul
-              className="grid gap-4 mt-4 sm:grid-cols-2 xl:grid-cols-3"
-              fade-side="3"
-            >
+            <ul className="grid gap-4 mt-4 sm:grid-cols-2 xl:grid-cols-3">
               {posts.length > 0 ? (
                 posts.map((post, index) => (
-                  <ListContent key={index} post={post} />
+                  <ListContent key={index} post={post} dataid={index} />
                 ))
               ) : (
                 <EmptyPage />

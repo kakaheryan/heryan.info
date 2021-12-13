@@ -168,9 +168,80 @@
   animation: textglow 1s ease-in-out infinite alternate;
 }
 
---clr-primary-200: rgb(var(--tw-clr-primary-100)); /* #8fc700 */
---clr-primary-200: rgb(var(--tw-clr-primary-200)); /* #00e89f */
---clr-primary-300: rgb(var(--tw-clr-primary-300)); /* #00dbf3 */
---clr-primary-400: rgb(var(--tw-clr-primary-400)); /* #ff007b */
---clr-primary-500: rgb(var(--tw-clr-primary-500)); /* #ffdd00 */
---clr-primary-600: rgb(var(--tw-clr-primary-600)); /* #d3f300 */
+.prose {
+  max-width: 50rem;
+  @apply text-tiny dark:text-white;
+}
+
+.prose strong,
+.prose span {
+  @apply dark:bg-gradient-to-r from-primary-600 via-primary-200 to-primary-300 px-1;
+}
+
+.prose a {
+  text-decoration: none;
+  @apply text-primary-300;
+}
+
+.prose > ol > li > :last-child,
+.prose > ul > li > :last-child {
+  margin-bottom: 0;
+}
+
+.prose > ol > li > :first-child,
+.prose > ul > li > :first-child {
+  margin-top: 0;
+}
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+  content: "";
+}
+
+.prose blockquote {
+  background: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 0 0 0 0.25rem;
+  border-image: linear-gradient(to top, #00ff94, #00e0f3, #ffdd00) 3;
+  border-radius: 4px;
+  @apply dark:text-gray-300;
+}
+
+.prose hr {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-image: linear-gradient(to right, #00ff9480, #00e0f380, #00c4fd80) 1;
+}
+
+.mdx.prose :where(h1, h2, h3, 4) {
+  scroll-margin-top: 100px;
+  position: relative;
+  display: block;
+  margin-right: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  @apply dark:text-white;
+}
+
+/** HASH ANCHOR */
+.hash-anchor {
+  @apply inset-y-0 w-full;
+  position: absolute;
+  background-image: none;
+  transition: none;
+}
+
+.hash-anchor:hover {
+  background-image: linear-gradient(to right, #00ff94, #00e0f3, #00c4fd);
+  background-size: 100% 2px;
+}
+
+.hash-anchor:hover:after,
+.hash-anchor:focus:after {
+  visibility: visible;
+}
+
+.hash-anchor:after {
+  @apply absolute invisible text-lg -translate-y-1/2 -right-5 text-primary-400 dark:text-primary-300 top-1/2;
+  content: "#";
+}

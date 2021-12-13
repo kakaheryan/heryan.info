@@ -10,6 +10,7 @@ import { BlogFrontmatter } from "@/types/content";
 
 type BlogCardProps = {
   post: BlogFrontmatter;
+  dataid: number;
   checkTagged?: (tag: string) => boolean;
 } & React.ComponentPropsWithoutRef<"li">;
 
@@ -17,26 +18,26 @@ export default function ListContent({
   post,
   className,
   checkTagged,
+  dataid,
 }: BlogCardProps) {
   return (
     <>
-      <li
-        className={clsx(
-          "w-full bg-white rounded-md border dark:border-gray-600 border-gray-300 dark:bg-dark",
-          "transform-gpu scale-100 hover:scale-[1.02] active:scale-[0.97]",
-          "transition duration-100",
-          "animate-shadow",
-          className
-        )}
-      >
+      <li className={className}>
         <LinkHref
-          className="block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
-          href={`/blog/${post.slug}`}
+          className={clsx(
+            "w-full bg-white rounded-md border dark:border-gray-600 border-gray-300 dark:bg-dark",
+            "transform-gpu scale-100 hover:scale-[1.02] active:scale-[0.97]",
+            "transition duration-100",
+            "animate-shadow",
+            "block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
+          )}
+          href={`/post/${post.slug}`}
+          fade-side={dataid + 2}
         >
           <div className="relative">
             <div
               className={clsx(
-                "absolute bottom-0 w-full ",
+                "absolute top-0 w-full ",
                 "flex flex-wrap justify-end  text-sm text-black gap-x-2 gap-y-1 dark:text-gray-100"
               )}
             >
