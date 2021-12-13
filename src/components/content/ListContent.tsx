@@ -39,8 +39,10 @@ export default function ListContent({
           fade-side={dataid + 2}
         >
           <div className="p-4">
-            <h4 className="text-gray-800 dark:text-gray-100">{post.title}</h4>
-            <div className="flex items-center justify-start gap-2 mt-2 text-sm font-medium dark:text-primary-300 text-gray-500">
+            <h4 className="text-primary-300 dark:text-gray-100">
+              {post.title}
+            </h4>
+            <div className="flex items-center justify-start gap-2 mt-2 text-sm font-medium  text-gray-400">
               <div className="flex items-center gap-1">
                 <HiCalendar className="inline-block text-base" />
                 {format(new Date(post.publishedAt), "MMMM dd, yyyy")}
@@ -50,7 +52,7 @@ export default function ListContent({
                 {post.readingTime.text}
               </div>
             </div>
-            <p className="text-sm text-gray-800 dark:text-gray-300">
+            <p className="text-sm text-black dark:text-gray-300">
               {post.description}
             </p>
           </div>
