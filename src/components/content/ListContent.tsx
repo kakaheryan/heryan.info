@@ -22,13 +22,17 @@ export default function ListContent({
 }: BlogCardProps) {
   return (
     <>
-      <li className={className}>
+      <li
+        className={clsx(
+          "relative transform-gpu scale-100 hover:scale-[1.02] active:scale-[0.97]",
+          "transition duration-100",
+          "animate-shadow",
+          className
+        )}
+      >
         <LinkHref
           className={clsx(
             "w-full bg-white rounded-md border dark:border-gray-600 border-gray-300 dark:bg-dark",
-            "transform-gpu scale-100 hover:scale-[1.02] active:scale-[0.97]",
-            "transition duration-100",
-            "animate-shadow",
             "block h-full rounded-md focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
           )}
           href={`/post/${post.slug}`}
