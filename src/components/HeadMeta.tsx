@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 
 const defaultMeta = {
   title: "Heryan's Official Portfolio",
-  siteName: "heryan.vercel.app",
+  siteName: "heryan.info",
   description:
     "An online portfolio and Blogs. Showcase of my skill and projects.",
-  url: "https://heryan.vercel.app",
-  image: "https://heryan.vercel.app/img/me.jpg",
+  url: "https://heryan.info",
+  image: "https://heryan.info/img/me.jpg",
   type: "website",
   robots: "follow, index",
 };

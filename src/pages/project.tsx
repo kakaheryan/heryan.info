@@ -4,10 +4,10 @@ import * as React from "react";
 
 import useLoaded from "@/hooks/useLoaded";
 
-import TextGradient from "@/components/attr/TextGradient";
 import LinkHref from "@/components/etc/LinkHref";
 import HeadMeta from "@/components/HeadMeta";
 import Layout from "@/components/main/Layout";
+import TitlePage from "@/components/main/TitlePage";
 
 export default function ProjectPage({
   repos,
@@ -23,9 +23,7 @@ export default function ProjectPage({
               useLoaded() && "fade-in-start"
             )}
           >
-            <h2 className="flex-none py-1 border-b-2 border-gray-300 dark:border-green-300">
-              <TextGradient> My Projects </TextGradient>
-            </h2>
+            <TitlePage className="text-primary-300">Project</TitlePage>
             <ul className="grid gap-2 mt-4 sm:grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2">
               {repos.map((repo, index) => (
                 <li key={index} className="block overflow-hidden">

@@ -74,7 +74,7 @@ export default function IndexPage() {
             <div className="p-4 md:px-8">
               <h2
                 className="text-lg font-semibold text-gray-600 dark:text-gray-300"
-                fade-bottom="4"
+                fade-bottom="3"
               >
                 The framework used:
               </h2>

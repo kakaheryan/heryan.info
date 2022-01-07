@@ -93,6 +93,10 @@
   }
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .tippy-tooltip [x-circle] {
   @apply text-xs;
   background-color: transparent !important;
@@ -175,7 +179,7 @@
 
 .prose strong,
 .prose span {
-  @apply dark:bg-gradient-to-r from-primary-600 via-primary-200 to-primary-300 px-1;
+  @apply dark:bg-gradient-to-r from-primary-600 via-primary-200 to-primary-300 px-1 text-gray-800;
 }
 
 .prose a {

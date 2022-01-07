@@ -52,7 +52,7 @@ export default function ProfilePage() {
                 <h2>
                   <TextGradient>Heryanto</TextGradient>
                 </h2>
-                <span className="text-xs text-gray-300" fade-side="2">
+                <span className="text-xs text-gray-300" fade-side="3">
                   Full-Stack Developer
                 </span>
                 <div className="text-gray-600 dark:text-gray-300" fade-side="3">
@@ -63,13 +63,13 @@ export default function ProfilePage() {
             <div className="rounded-md mt-2">
               <h3
                 className="title-bar mb-2 py-2 border-b border-gray-500"
-                fade-side="3"
+                fade-side="2"
               >
                 <TextGradient>AboutMe</TextGradient>
               </h3>
               <p
                 className="px-1 text-gray-600 dark:text-gray-300"
-                fade-side="4"
+                fade-side="3"
               >
                 Hi there! I'm an Web Developer Back-End and Front-End. I was
                 born in Cirebon, Indonesia. now I am 25 years old and still
@@ -80,7 +80,7 @@ export default function ProfilePage() {
             <div className="rounded-md mt-2">
               <h3
                 className="title-bar mb-2 py-2 border-b border-gray-500"
-                fade-side="4"
+                fade-side="2"
               >
                 <TextGradient className="inline-block">Contact</TextGradient>
               </h3>
