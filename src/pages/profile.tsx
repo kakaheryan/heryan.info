@@ -17,7 +17,6 @@ import HeadMeta from "@/components/HeadMeta";
 import LearnExperience from "@/components/LearnExperience";
 import Layout from "@/components/main/Layout";
 import Skillbase from "@/components/Skillbase";
-import moment  from "moment";
 import ProfilImage from "/public/img/me.jpg";
 
 export default function ProfilePage() {
