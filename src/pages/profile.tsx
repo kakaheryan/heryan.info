@@ -17,7 +17,7 @@ import HeadMeta from "@/components/HeadMeta";
 import LearnExperience from "@/components/LearnExperience";
 import Layout from "@/components/main/Layout";
 import Skillbase from "@/components/Skillbase";
-
+import moment  from "moment";
 import ProfilImage from "/public/img/me.jpg";
 
 export default function ProfilePage() {
@@ -72,7 +72,7 @@ export default function ProfilePage() {
                 fade-side="3"
               >
                 Hi there! I'm an Web Developer Back-End and Front-End. I was
-                born in Cirebon, Indonesia. now I am 25 years old and still
+                born in Cirebon, Indonesia. now I am {moment("19960320", "YYYYMMDD").fromNow()} years old and still
                 single.I work for myself
               </p>
             </div>
